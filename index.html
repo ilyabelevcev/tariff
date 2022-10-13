@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="main">
+      <div class="description">
+         <h2 class="description__heading">Расчет абонентской платы</h2>
+         <p class="description__text">Пользователь подключен к мобильному оператору «Оператор». Абонентская плата составляет A рублей в месяц. За эту стоимость пользователь получает B мегабайт интернет-трафика. Если пользователь выйдет за лимит трафика, то каждый следующий мегабайт будет стоить ему  C  рублей. Пользователь планирует потратить D мегабайт интернет-трафика в следующий месяц. Помогите ему сосчитать, во сколько рублей ему обойдется интернет.</p>
+      </div>
+      <div class="wrapper">
+         <ul class="wrapper__list">
+            <li class="wrapper__list-item">
+               <label class="wrapper__item-label" for="subscriptionFee">
+                  Абонентской плата пользователя (руб.)
+                  <input id="subscriptionFee" class="wrapper__item-input" type="number">
+               </label>
+            </li>
+            <li class="wrapper__list-item">
+               <label class="wrapper__item-label" for="amountOfTraffic">
+                  Количество трафика (МБ)
+                  <input id="amountOfTraffic" class="wrapper__item-input" type="number">
+               </label>
+            </li>
+            <li class="wrapper__list-item">
+               <label class="wrapper__item-label" for="costOneMb">
+                  Стоимость 1 дополнительного МБ (руб.)
+                  <input id="costOneMb" class="wrapper__item-input" type="number">
+               </label>
+            </li>
+            <li class="wrapper__list-item">
+               <label class="wrapper__item-label" for="amountOfTrafficNextMonth">
+                  Желаемое количество трафика в след. месяце (МБ)
+                  <input id="amountOfTrafficNextMonth" class="wrapper__item-input" type="number">
+               </label>
+            </li>
+         </ul>
+         <div class="result"></div>
+         <button class="wrapper__button">Рассчитать</button>
+      </div>
+   </div>
+   <div class="result-block"></div>
+   <script src="js/script.js"></script>
+</body>
+</html>
